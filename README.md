@@ -1,0 +1,1 @@
+# arch-simple-grub-theme
