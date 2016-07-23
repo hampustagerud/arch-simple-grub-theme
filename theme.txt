@@ -1,0 +1,51 @@
+# Arch-Simple GRUB2 theme
+# Written by Hampus Tågerud 2016
+
+# Desktop Color
+desktop-color: "#000"
+
+# Terminal Settings
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Logo
++ image {
+	left = 50%-300
+	top = 40%-100
+    	file = "arch-logo.png"
+}
+
+# Boot Menu Settings
++ boot_menu {
+	left = 50%-150
+	top = 50%+100
+	width = 500
+	height = 300
+
+	item_color = "#999999"
+	selected_item_color= "#FFFFFF"
+
+	item_height = 40
+	item_padding = 0
+	item_icon_space = 0
+	item_spacing = 1
+	scrollbar = false
+}
+
+# Progress Settings
++ progress_bar {
+	left = 50%-300
+	top = 100%-100
+	width = 600
+	height = 50
+
+	id = "__timeout__"
+	text_color = "#FFFFFF"
+	text = "@TIMEOUT_NOTIFICATION_LONG@"
+
+	bar_style = "*"
+	highlight_style = "*"
+}
